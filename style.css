@@ -2,13 +2,14 @@
 body {
     display: flex;                /* Enables Flexbox */
     justify-content: center;      /* Centers horizontally */
-    align-items: center;          /* Centers vertically */
+    /*align-items: center;          /* Centers vertically */
     flex-direction: column;       /* Stacks elements in the same order as in the HTML */
     height: 100vh;                /* Full viewport height */
-    margin: 0;                    /* Removes default margin */
+    margin: 0 auto;                    /* Removes default margin */
     background-color: #CC9999;    /* Light background for better visibility */
     font-family: Arial, sans-serif; /* Clean font styling */
     text-align: center;           /* Centers text inside elements */
+    max-width: 50%;
 }
 
 #bodywork {
@@ -36,17 +37,19 @@ body {
 input[type="number"] {
     width: 150px;
     padding: 10px;
-    margin: 10px;
+    margin: 0 auto;
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 16px;
+    justify-content: center;      /* Centers horizontally */
+    align-items: center;
 }
 
 button {
     padding: 10px 20px;
     justify-content: center;      /* Centers horizontally */
     font-size: 16px;
-    margin: 10px;
+    margin: 0 auto;
     border: none;
     border-radius: 5px;
     cursor: pointer;
