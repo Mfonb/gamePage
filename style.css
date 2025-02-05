@@ -1,0 +1,90 @@
+/* Style the body to center all content */
+body {
+    display: flex;                /* Enables Flexbox */
+    justify-content: center;      /* Centers horizontally */
+    align-items: center;          /* Centers vertically */
+    flex-direction: column;       /* Stacks elements in the same order as in the HTML */
+    height: 100vh;                /* Full viewport height */
+    margin: 0;                    /* Removes default margin */
+    background-color: #CC9999;    /* Light background for better visibility */
+    font-family: Arial, sans-serif; /* Clean font styling */
+    text-align: center;           /* Centers text inside elements */
+}
+
+#bodywork {
+    background-color: #a88686;
+}
+
+/* Center the heading section */
+#heading h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #333;                 /* Dark text color */
+}
+
+#numberInput {
+    justify-content: center;      /* Centers horizontally */
+}
+
+#prompt {
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+/* Style the input and buttons */
+input[type="number"] {
+    width: 150px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    justify-content: center;      /* Centers horizontally */
+    font-size: 16px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(15, 44, 15);
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Style the sections for better spacing */
+section {
+    margin: 20px 0;
+}
+
+/* Style the reward section */
+aside h2 {
+    font-size: 28px;
+    color: rgb(36, 31, 3);              /* Green color for rewards */
+    margin-top: 20px;
+}
+
+/* Trial and guess alert styles */
+#trialMessage, #guessAlert {
+    margin: 10px 0;
+}
+
+#noOfTrial, #noOfGuesses {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #ffc107;   /* Yellow background for trial/guess buttons */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#noOfTrial:hover, #noOfGuesses:hover {
+    background-color: #e0a800;
+}
