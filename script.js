@@ -205,7 +205,7 @@ function processGuess() {
     if (userNumber === randomRange) {
         correctGuesses++;
         guessAlert.textContent = `You've made ${correctGuesses} correct guesses. Keep Going!`;
-        rewardOutput.textContent = `You guessed it! Great job! The correct number was ${randomRange}. Keep Going!`;
+        rewardOutput.textContent = `You guessed it! Great job! The correct number was ${randomRange} from between ${lowerLimit}-${upperLimit}. Keep Going!`;
         trialsDisplay();
         generateRandomNumber(); // Start a new round
 
