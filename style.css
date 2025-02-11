@@ -91,3 +91,9 @@ aside h2 {
 #noOfTrial:hover, #noOfGuesses:hover {
     background-color: #e0a800;
 }
+
+@media (max-width: 550px) {
+    body {
+        max-width: 90%;
+    }
+}
