@@ -183,19 +183,19 @@ function processGuess() {
 
     if (userInput.value === "") {
         rewardOutput.textContent = "Please enter a number.";
-        trialsDisplay()
+        trialsDisplay();
         return generateRandomNumber();
     }
 
     if (isNaN(userNumber)) {
         rewardOutput.textContent = "Invalid input. Please enter a valid number.";
-        trialsDisplay()
+        trialsDisplay();
         return generateRandomNumber();
     }
 
     if (userNumber < lowerLimit || userNumber > upperLimit) {
         rewardOutput.textContent = `Your input is outside the range ${lowerLimit}-${upperLimit}. Enter the new Number.`;
-        trialsDisplay()
+        trialsDisplay();
         return generateRandomNumber();
     }
 
@@ -206,38 +206,39 @@ function processGuess() {
         correctGuesses++;
         guessAlert.textContent = `You've made ${correctGuesses} correct guesses. Keep Going!`;
         rewardOutput.textContent = `You guessed it! Great job! The correct number was ${randomRange}. Keep Going!`;
-        trialsDisplay()
+        trialsDisplay();
         generateRandomNumber(); // Start a new round
 
     } else if (userNumber > randomRange && userNumber-randomRange <= 2) {
         rewardOutput.textContent = `${userNumber} was close but high! The robot predicted ${randomRange} from between ${lowerLimit}-${upperLimit}. Enter the new Number.`;
-        trialsDisplay()
+        trialsDisplay();
         generateRandomNumber(); // Start a new round
 
     } else if (userNumber > randomRange && userNumber - randomRange > 2 && userNumber - randomRange <= 5) {
         rewardOutput.textContent = `${userNumber} was a bit high! The robot predicted ${randomRange} from between ${lowerLimit}-${upperLimit}. Enter the new Number.`;
-        trialsDisplay()
+        trialsDisplay();
         generateRandomNumber();
 
     } else if (userNumber > randomRange && userNumber-randomRange > 5) {
         rewardOutput.textContent = `${userNumber} was high! The robot predicted ${randomRange} from between ${lowerLimit}-${upperLimit}. Enter the new Number.`;
-        trialsDisplay()
+        trialsDisplay();
         generateRandomNumber();
 
     } else if (userNumber < randomRange && randomRange - userNumber <= 2) {
         rewardOutput.textContent = `${userNumber} was close but low! The robot predicted ${randomRange} from between ${lowerLimit}-${upperLimit}. Enter the new Number.`;
-        trialsDisplay()
+        trialsDisplay();
         generateRandomNumber(); // Start a new round
 
     }  else if (userNumber < randomRange && randomRange - userNumber > 2 && randomRange - userNumber <= 5) {
       rewardOutput.textContent = `${userNumber} was a bit low! The robot predicted ${randomRange} from between ${lowerLimit}-${upperLimit}. Enter the new Number.`;
-      trialsDisplay()
+      trialsDisplay();
       generateRandomNumber();
 
     } else if (userNumber < randomRange && randomRange - userNumber > 5) {
       rewardOutput.textContent = `${userNumber} was low! The robot predicted ${randomRange} from between ${lowerLimit}-${upperLimit}. Enter the new Number.`;
-      trialsDisplay()
+      trialsDisplay();
       generateRandomNumber();
+    }
 }
 
 function restart() {
